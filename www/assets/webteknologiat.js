@@ -3,9 +3,47 @@
  */
 
 $(document).ready(function() {
+    initCreatePost();
     initRegister();
     initLogin();
 });
+
+function initListPosts() {
+    //
+}
+
+function initCreatePost() {
+    $('#create-post-form').submit(function(e) {
+        e.preventDefault();
+        $('#create-post-form-spinner').show();
+        var formData = new FormData(this);
+        $.ajax({
+            type: 'POST',
+            data: formData,
+            url: 'Controllers/Post/CreatePost.php',
+            processData: false,
+            contentType: false,
+            success: function(data){
+              if (data === 'true') {
+                $('#create-post-form-spinner').hide();
+                $('#alert-create-post-success > strong').html('Lisätty!');
+                $('#alert-create-post-success').show();
+                $('#create-post-form')[0].reset();
+              } else {
+                $('#create-post-form-spinner').hide();
+                $('#alert-create-post-failed > strong').html('Lisääminen epäonnistui');
+                $('#alert-create-post-failed').show();
+              }
+            },
+            error: function (request, status, error) {
+                $('#create-post-form-spinner').hide();
+                $('#alert-create-post-failed > strong').html('Lisääminen epäonnistui');
+                $('#alert-create-post-failed').show();
+                console.log(request.responseText);
+            }
+        });
+    });
+}
 
 function initRegister() {
     $('#register-form').submit(function(e) {

@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,6 +36,14 @@
           <li class="nav-item">
             <a class="nav-link" href="#documentation">Dokumentointi</a>
           </li>
+          <?php
+            if (isset($_SESSION['user'])) {
+              echo '
+              <li class="nav-item">
+                <a class="nav-link" href="page_create_post.php">Uusi postaus</a>
+              </li>';
+            }
+          ?>
         </ul>
       </div>
     </div>
