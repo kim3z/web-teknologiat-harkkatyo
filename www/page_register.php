@@ -35,7 +35,7 @@
                 <input class="form-control" type="password" name="password" autocomplete="off" />
             </div>
 
-            <input type="submit" class="btn btn-success" value="Rekisteröidy" />
+            <input type="submit" class="btn btn-primary" value="Rekisteröidy" />
         </form>
         </div>
       </div>

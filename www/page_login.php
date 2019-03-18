@@ -26,7 +26,7 @@
                     <label for="password">Password</label>
                     <input class="form-control" type="password" name="password" />
                 </div>
-                <input type="submit" class="btn btn-success" name="login" value="Kirjaudu sisään" />
+                <input type="submit" class="btn btn-primary" name="login" value="Kirjaudu sisään" />
             </form>
             </div>
         </div>

@@ -6,6 +6,7 @@ $(document).ready(function() {
     initCreatePost();
     initRegister();
     initLogin();
+    categoryTabs();
 });
 
 function initListPosts() {
