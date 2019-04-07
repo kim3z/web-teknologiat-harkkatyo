@@ -1,5 +1,5 @@
 <?php 
-    require_once './authenticate.php';
+    //require_once './authenticate.php';
     include_once './layout/site_header.php';
 ?>
 
@@ -43,7 +43,17 @@
                 </div>
                 <div class="form-group">
                     <label for="title">Teksti</label>
-                    <textarea class="form-control" rows="5" type="text" name="content"></textarea>
+                    <textarea class="form-control" id="summernote" rows="5" type="text" name="content"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="post-category">Kategoria</label>
+                    <select name="post-category" class="form-control" id="post-category">
+                        <option value="1">Tekniikka</option>
+                        <option value="2">Urheilu</option>
+                        <option value="3">Matkailu</option>
+                        <option value="4">Opiskelu</option>
+                        <option value="5">Historia</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="create-post-img">Kuva</label>

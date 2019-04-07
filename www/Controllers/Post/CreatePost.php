@@ -15,6 +15,7 @@ $post = new Post($dbConn);
 $post->title = $_POST['title'];
 $post->content = $_POST['content'];
 $post->user_id = $_POST['user_id'];
+$post->category_id = (int)$_POST['post-category'];
 
 $img = $_FILES['create-post-img'];
 $file_name = $post->uploadImage($img, $post->user_id);

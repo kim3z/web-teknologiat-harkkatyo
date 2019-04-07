@@ -1,4 +1,8 @@
 <?php 
+    /**
+     * @author Kim Lehtinen <kim.lehtinen@student.uwasa.fi>
+     */
+
     include_once './layout/site_header.php';
 ?>
 

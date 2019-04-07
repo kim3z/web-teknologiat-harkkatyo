@@ -2,12 +2,58 @@
  * Author: Kim Lehtinen <kim.lehtinen@student.uwasa.fi>
  */
 
+var filters = {
+    filterShowAll: 0,
+    filterTechnology: 1,
+    filterSport: 2,
+    filterTravel: 3,
+    filterStudying: 4,
+    filterHistory: 5
+};
+
 $(document).ready(function() {
     initCreatePost();
     initRegister();
     initLogin();
-    categoryTabs();
+    initFilterByCategory();
+    initSummernote();
 });
+
+function initSummernote() {
+    $('#summernote').summernote();
+}
+
+function initFilterByCategory() {
+    $('.post-filter-category a').click(function() {
+        $('.post-filter-category a').removeClass('active');
+
+        $(this).addClass('active');
+        var classes = $(this).attr("class").split(' ');
+        var filter = '';
+        
+        for (var i=0; i<classes.length; i++) {
+            if (filters.hasOwnProperty(classes[i])) {
+                filter = classes[i];
+                break;
+            }
+        }
+
+        if (filter.length > 0) {
+            filterCategory(filter);
+        }
+    });
+}
+
+function filterCategory(filter) {
+    var filterNumber = filters[filter];
+
+    if (filter === 'filterShowAll') {
+        $('.post').show();
+    } else {
+        $('.post').hide();
+        $('.post-category-' + filterNumber).show();
+    }
+}
 
 function initListPosts() {
     //

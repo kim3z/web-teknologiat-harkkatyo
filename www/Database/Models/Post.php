@@ -13,6 +13,7 @@ class Post {
     public $title;
     public $content;
     public $img;
+    public $category_id;
     public $created_at;
 
     public function __construct($db) {
@@ -23,14 +24,15 @@ class Post {
      * Create post
      */
     function create() {
-        $sql = 'INSERT INTO ' . $this->db_table . ' (user_id, title, content, img) VALUES (:user_id, :title, :content, :img)';
+        $sql = 'INSERT INTO ' . $this->db_table . ' (user_id, title, content, img, category_id) VALUES (:user_id, :title, :content, :img, :category_id)';
         $stmt = $this->conn->prepare($sql);
 
         $params = array(
             ':user_id' => $this->user_id,
             ':title' => $this->title,
             ':content' => $this->content,
-            ':img' => $this->img
+            ':img' => $this->img,
+            ':category_id' => $this->category_id,
         );
         
         if ($stmt->execute($params)) {

@@ -1,4 +1,11 @@
 <?php 
+/**
+  * @author Kim Lehtinen <kim.lehtinen@student.uwasa.fi>
+  */
+
+date_default_timezone_set('Europe/Helsinki');
+setlocale(LC_TIME, "fi_FI");
+
 session_start();
 ?>
 <!DOCTYPE html>
@@ -16,13 +23,13 @@ session_start();
   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/webteknologiat.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Margarine" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="assets/summernote/summernote-bs4.css">
   <style>
   /* Hero image css from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image */
   body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
   }
   .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/adventure.jpg');
@@ -59,10 +66,28 @@ session_start();
 }
 /*./hero-image css*/
 
-.card-img-top {
+.card-img-top, .single-post-img {
   width: 100%;
-    height: 15vw;
-    object-fit: cover;
+  height: 20vw;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 650px) {
+  .single-post-img, .card-img-top {
+    height: 50vw;
+  }
+}
+
+.single-post-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-post-title {
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+  display: inline-block;
 }
   </style>
 
@@ -71,7 +96,7 @@ session_start();
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="/">JULK</a>
+      <a class="navbar-brand" href="/" style="font-family: 'Margarine', cursive;">JULK</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
