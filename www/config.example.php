@@ -1,8 +1,8 @@
 <?php 
 
-define('APP_DB_HOST', 'localhost');
-define('APP_DB_USERNAME', 'root');
-define('APP_DB_PASSWORD', '');
-define('APP_DB_NAME', '');
+define('MY_DB_HOST', 'localhost');
+define('MY_DB_USERNAME', 'root');
+define('MY_DB_PASSWORD', '');
+define('MY_DB_NAME', '');
 
 ?>
