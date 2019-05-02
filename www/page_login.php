@@ -3,7 +3,7 @@
      * @author Kim Lehtinen <kim.lehtinen@student.uwasa.fi>
      */
 
-    include_once './layout/site_header.php';
+    include_once './site_header.php';
 ?>
 
 <section id="login-form-section">
@@ -38,5 +38,5 @@
   </section>
 
 <?php 
-    include_once './layout/site_footer.php';
+    include_once './site_footer.php';
 ?>

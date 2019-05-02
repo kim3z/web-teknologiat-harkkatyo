@@ -3,7 +3,7 @@
      * @author Kim Lehtinen <kim.lehtinen@student.uwasa.fi>
      */
 
-    include_once './layout/site_header.php';
+    include_once './site_header.php';
     include_once './Database/DB.php';
     include_once './Functions/Post.php';
 
@@ -39,18 +39,24 @@
                     <h1 class="single-post-title"><?php echo $post['title']; ?></h1>
                 </div>
                 <p class="text-center"><?php echo $post['author']; ?>, <?php  echo $post['created_at']; ?></p>
-                <img class="img-fluid single-post-img mb-2 mt-2" src="<?php echo 'uploads/' . $post['img']; ?>" alt="">
+                <div>
+                <img class="img-fluid single-post-img mb-2 mt-2" src="<?php echo $post['img']; ?>" alt="">
                 <p class="lead">
                     <?php echo $post['content']; ?>
                 </p>
+                </div>
             <?php else : ?>
                 <h1>Julkaisua ei löytynyt</h1>
             <?php endif; ?>
+                <br>
+                <div>
+            <a href="http://new-lipas.uwasa.fi/~y104696/" class="btn btn-primary"> < Takaisin </a>
+            </div>
             </div>
         </div>
     </div>
   </section>
 
 <?php 
-    include_once './layout/site_footer.php';
+    include_once './site_footer.php';
 ?>

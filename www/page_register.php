@@ -1,5 +1,5 @@
 <?php 
-    include_once './layout/site_header.php';
+    include_once './site_header.php';
 ?>
 
   <section id="register-form-section">
@@ -43,5 +43,5 @@
   </section>
 
 <?php 
-    include_once './layout/site_footer.php';
+    include_once './site_footer.php';
 ?>

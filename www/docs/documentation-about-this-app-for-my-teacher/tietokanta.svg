@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg
+PUBLIC "-//W3C//DTD SVG 1.1//EN"
+       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="240 95 631 285" width="391px" height="190px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+   <line x1="527" y1="160" x2="517" y2="160" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="346" y1="157" x2="336" y2="157" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="517" y1="160" x2="346" y2="157" style="stroke:#c00;stroke-width:1;"/>
+   <line x1="519.5" y1="160" x2="523.03553390593" y2="163.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="519.5" y1="160" x2="523.03553390593" y2="156.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="341" y1="157" x2="344.53553390593" y2="160.53553390593" style="stroke:#c00;stroke-width:2;"/>
+   <line x1="341" y1="157" x2="344.53553390593" y2="153.46446609407" style="stroke:#c00;stroke-width:2;"/>
+   <rect width="89" height="20" x="527" y="110" style="fill:#007;stroke:black;"/>
+   <text width="89" height="20" x="532" y="124" style="fill:#fff;" font-family="Arial" font-size="16px"> posts</text>
+   <rect width="89" height="20" x="527" y="130" style="fill:#aea;stroke:black;"/>
+   <text width="89" height="20" x="532" y="144" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="89" height="20" x="527" y="150" style="fill:none;stroke:black;"/>
+   <text width="89" height="20" x="532" y="164" style="fill:black;" font-family="Arial" font-size="16px">user_id</text>
+   <rect width="89" height="20" x="527" y="170" style="fill:none;stroke:black;"/>
+   <text width="89" height="20" x="532" y="184" style="fill:black;" font-family="Arial" font-size="16px">title</text>
+   <rect width="89" height="20" x="527" y="190" style="fill:none;stroke:black;"/>
+   <text width="89" height="20" x="532" y="204" style="fill:black;" font-family="Arial" font-size="16px">content</text>
+   <rect width="89" height="20" x="527" y="210" style="fill:none;stroke:black;"/>
+   <text width="89" height="20" x="532" y="224" style="fill:black;" font-family="Arial" font-size="16px">img</text>
+   <rect width="89" height="20" x="527" y="230" style="fill:none;stroke:black;"/>
+   <text width="89" height="20" x="532" y="244" style="fill:black;" font-family="Arial" font-size="16px">category_id</text>
+   <rect width="89" height="20" x="527" y="250" style="fill:none;stroke:black;"/>
+   <text width="89" height="20" x="532" y="264" style="fill:black;" font-family="Arial" font-size="16px">created_at</text>
+   <rect width="81" height="20" x="255" y="127" style="fill:#007;stroke:black;"/>
+   <text width="81" height="20" x="260" y="141" style="fill:#fff;" font-family="Arial" font-size="16px"> users</text>
+   <rect width="81" height="20" x="255" y="147" style="fill:#aea;stroke:black;"/>
+   <text width="81" height="20" x="260" y="161" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="81" height="20" x="255" y="167" style="fill:none;stroke:black;"/>
+   <text width="81" height="20" x="260" y="181" style="fill:black;" font-family="Arial" font-size="16px">username</text>
+   <rect width="81" height="20" x="255" y="187" style="fill:none;stroke:black;"/>
+   <text width="81" height="20" x="260" y="201" style="fill:black;" font-family="Arial" font-size="16px">password</text>
+</svg>
